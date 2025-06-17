@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_food"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.orderapp.ui.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/homeToDetail"
+            app:destination="@id/foodDetailFragment" />
+        <action
+            android:id="@+id/homeToCart"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailFragment"
+        android:name="com.example.orderapp.ui.Fragment.FoodDetailFragment"
+        android:label="fragment_food_detail"
+        tools:layout="@layout/fragment_food_detail" >
+        <argument
+            android:name="item"
+            app:argType="com.example.orderapp.data.entity.Food" />
+        <action
+            android:id="@+id/tohomefragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.orderapp.ui.Fragment.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/toHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_cartFragment"
+        app:destination="@id/cartFragment"
+        app:launchSingleTop="true" />
+
+</navigation>
