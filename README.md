@@ -29,6 +29,7 @@ Modern ve sade bir yemek siparişi uygulaması. Kullanıcılar ürünleri sepete
 
 ### 🍔 Ürün Detay
 <img src="screenshots/Screenshot_1750195552.png" width="300"/>
+<img src="screenshots/Untitled.png" width="300"/>
 
 ### ✅ Sipariş Onayı
 <img src="screenshots/Screenshot_1750195598.png" width="300"/>
