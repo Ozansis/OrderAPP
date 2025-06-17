@@ -20,7 +20,7 @@ Modern ve sade bir yemek siparişi uygulaması. Kullanıcılar ürünleri sepete
 ## 📸 Ekran Görüntüleri
 
 
-<img src="screenshots/Untitled.png" width="500" height="200"/>
+<img src="screenshots/Untitled.png" width="500" height="600"/>
 
 
 ---
